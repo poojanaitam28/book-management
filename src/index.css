@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.clipped{
+    border-radius: 9%;
+    clip-path: polygon(1% 0%, 84% 0%, 84% 13%, 100% 13%, 99% 99%, 0% 99%);
+}
+
+
+
+.spinner {
+   position: relative;
+   width: 15.7px;
+   height: 15.7px;
+   left: 750px;
+   top: 250px;
+}
+
+.spinner div {
+   animation: spinner-4t3wzl 1.875s infinite backwards;
+   background-color: #213555;
+   border-radius: 50%;
+   height: 100%;
+   position: absolute;
+   width: 100%;
+}
+
+.spinner div:nth-child(1) {
+   animation-delay: 0.15s;
+   background-color: rgba(33,53,85,0.9);
+}
+
+.spinner div:nth-child(2) {
+   animation-delay: 0.3s;
+   background-color: rgba(33,53,85,0.8);
+}
+
+.spinner div:nth-child(3) {
+   animation-delay: 0.45s;
+   background-color: rgba(33,53,85,0.7);
+}
+
+.spinner div:nth-child(4) {
+   animation-delay: 0.6s;
+   background-color: rgba(33,53,85,0.6);
+}
+
+.spinner div:nth-child(5) {
+   animation-delay: 0.75s;
+   background-color: rgba(33,53,85,0.5);
+}
+
+@keyframes spinner-4t3wzl {
+   0% {
+      transform: rotate(0deg) translateY(-200%);
+   }
+
+   60%, 100% {
+      transform: rotate(360deg) translateY(-200%);
+   }
+}
