@@ -8,6 +8,7 @@ function Home() {
   return (
     <div className="w-full h-full bg-[url('https://img.freepik.com/free-photo/3d-rendering-classic-interior_23-2150943454.jpg?ga=GA1.1.2100011829.1732618920&semt=ais_hybrid')] bg-cover">
       <div className="w-full h-24 flex justify-between items-center px-2 md:px-32">
+
         <div className="flex gap-2">
           <img className="w-6 h-6 md:w-8 md:h-8" src={logo} alt="logo" />
           <h1 className=" text-xl md:text-3xl font-extrabold font-poppins text-orange">
